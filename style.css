@@ -1,0 +1,125 @@
+#head{
+    display: flex;
+    background-color: #1d2f30;
+    height: 60px;
+}
+
+body{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main{
+    background-image: url(img/bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+}
+
+#block{
+    background-color:rgba(29, 47, 48, 0.747);
+    height: 550px;
+    margin: 0;
+}
+    
+
+#desc{
+    margin-top: 0;
+    padding-top: 175px;
+    padding-left: 165px;
+    width: 688px;
+    height: 125px;
+    font-family: "Cormorant", serif;
+    font-size: 60px;
+}
+
+#desc1{
+    padding-left: 165px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.res{
+    padding-left: 165px;
+    text-decoration: none;
+    color: rgba(186, 226, 73, 1);
+}
+
+ul{
+    display: flex;
+    gap:20px;
+    list-style-type: none;
+}
+
+.searchbtn{
+    background: none;
+    border: none;
+    padding:0;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin-right: 32px;
+}
+
+.searchbtn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navlink{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+a:hover{
+    color:rgb(99, 150, 23);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+.navitem{
+  
+    transition: color 0.3 ease;
+    color:aliceblue;
+}
+
+.navitem:hover{
+    color: greenyellow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.glass{
+    width: 24px;
+    height: 24px;
+}
+
+.arrow{
+    width:43px;
+    padding-left: 10px;
+}
+
+#desc{
+    color: #ffffff;
+}
+
+#desc1{
+    color: #ffffff;
+}
+
+.logo{
+    margin-top: 20px;
+}
+
+.searchbtn{
+    margin-top: 20px;
+    margin-left: 600px;
+}
+
+.plant1{
+    width: 150px;
+    height: 223px;
+    background: none;
+}
+
+#block2{
+    background-color: #1d2f30;
+    height: 1000px;
+}

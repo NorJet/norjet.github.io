@@ -4,111 +4,109 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>Placeholder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
+    <div class="bg">
     <header class="header">
-        <div id="head">
-            <a href='#' class="logo"><img class='logotip' src="img/logo.png"></a>
-            <nav class="navheader">
-                <ul class="navlist">
-                    <li class="navitem"><a href='#' class='navlink'>Каталог</a></li>
-                    <li class="navitem"><a href='#' class='navlink'>Галерея</a></li>
-                    <li class="navitem"><a href='#' class='navlink'>О лаборатории</a></li>
-                    <li class="navitem"><a href='#' class='navlink'>Контакты</a></li>
-                </ul>
-            </nav>
-            <form class="search">
-                <button class="searchbtn" type="submit">
-                <img class='glass' src="img/search.png" alt="Поиск">
-            </button>
-            <a href='#' class="loginbtn"><img class='login' src="img/log-in.png"></a>
+        <div class="main">
+            <div class="logo">
+                <img class='logoimg' src="img/logo.png" alt="лого">
+            </div>
+            <ul class="nav">
+                <li class="navitem">Главная</li>
+                <li class="navitem">Про гида</li>
+                <li class="navitem">Программа тура</li>
+                <li class="navitem">Стоимость</li>
+                <li class="navitem">Блог</li>
+                <li class="navitem">Контакты</li>
+                <button class="navitem1">Консультация</button>
+            </ul>
         </div>
     </header>
+    <div class="titlename">
+        <h1>НАСЛАДИСЬ ПРОГУЛКОЙ В ГОРАХ<br>С КОМАНДОЙ ЕДИНОМЫШЛЕННИКОВ</h1>
+    </div>
+    <form class="form">
+        <div class="select">
+            <select name="loc">
+                <option value="" disabled selected>Локации для тура</option>
+                <option value="">Великобритания</option>
+                <option value="">США</option>
+                <option value="">Япония</option>
+            </select>
+            <label for="loc">выберите из списка</label>
+        </div>
+        <div class="select">
+            <input class='date' name='date' type="date">
+            <label for="date">укажите диапазон</label>
+        </div>
+        <div class="select">
+            <select name="people">
+                <option value="" disabled selected>Участники</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+            </select>
+            <label for="people">минимум 4 человека</label>
+        </div>
+            <input class='program' type="submit" value="Найти программу" class="formbtn">
+</form>
 
-    <main class="main">
-        <div id="block">
-        <div id="main1">
-            <h1 id="desc">Крупнейшая коллекция<br>природных артефактов</h1>
-            <p id="desc1">Являясь всего лишь частью общей картины, интерактивные прототипы, которые <br> представляют собой яркий пример европейского типа политической и социальной<br>культуры.</p>
-            <a class='res' href="#">Исследовать<img class='arrow' src='img/arrow.png' alt='Исследовать'></a>
-        </div>
+</div>
+
+    <div class="container">
+        <div class="mtnimg">
+            <img class="mtnimg1" src="img/mtn.jpeg">
+            <img class="houseimg1" src="img/house.jpeg">
         </div>
 
-        <div id="block2">
-            <div id="containing">
-                <div id="cards">
-            <div id="card">
-                <div id="plant">
-                    <img class='plant' src="img/plant.png">
-                </div>
-                <div id="pdesc">
-                    <h3 class="cardtitle">Fig. 1 (plant)</h3>
-                    <p class="carddesc">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
-                    <button id="morebtn">Подробнее</button>
-                </div>
-            </div>
-            <div id="card">
-                <div id="plant">
-                    <img class='plant2' src="img/plant2.png">
-                </div>
-                <div id="pdesc">
-                    <h3 class="cardtitle">Fig. 2 (flower)</h3>
-                    <p class="carddesc">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
-                    <button id="morebtn">Подробнее</button>
-                </div>
+        <div class="about">
+            <p class="aboutt">о нашем походе</p>
+            <h2 class="title1">Исследуйте все горные массивы<br>мира вместе с нами</h2>
+            <p class="abouttext">Его корни уходят в один фрагмент классической латыни 45 года н. э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, «consectetur» и занялся его поисками в классической латинской литературе.</p>
+            <button class="tourbtn">Программа тура</button>
         </div>
-            <div id="card">
-                <div id="plant">
-                    <img class='plant3' src="img/plant3.png">
-                </div>
-                <div id="pdesc">
-                    <h3 class="cardtitle">Fig. 3 (leaf)</h3>
-                    <p class="carddesc">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
-                    <button id="morebtn">Подробнее</button>
+    </div>
+    <div class="programs">
+        <div class="programss">
+        <p class="offer">наше предложение</p>
+        <h2 class="offerh">Лучшие программы для тебя</h2>
+        <p class="offertext">Его корни уходят в один фрагмент классической латыни 45 года<br>н. э., то есть более двух тысячелетий назад. Ричард МакКлинток,<br> профессор латыни из колледжа.</p>
+    </div>
+    <div class="programpics">
+        <img class="pic" src="img/pic1.jpeg">
+        <img class="pic" src="img/pic2.jpeg">
+        <img class="pic" src="img/pic3.jpeg">
+        <img class="pic" src="img/pic4.jpeg">
+    </div>
+    <div class="advantages">
+        <div class="advantage-item">
+            <img class="icon" src="img/icon1.png" alt="Опытный гид">
+            <div class="text-content">
+                <h3>Опытный гид</h3>
+                <p class="advdesc">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
             </div>
         </div>
-            <div id="card">
-                <div id="plant">
-                    <img class='plant4' src="img/plant4.png">
-                </div>
-                <div id="pdesc">
-                    <h3 class="cardtitle">Fig. 4 (wood)</h3>
-                    <p class="carddesc">Базовый вектор развития не даёт нам иного выбора, кроме определения новых предложений.</p>
-                    <button id="morebtn">Подробнее</button>
-                </div>
+        <div class="advantage-item">
+            <img class="icon" src="img/icon2.png" alt="Безопасный поход">
+            <div class="text-content">
+                <h3>Безопасный поход</h3>
+                <p class="advdesc">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+            </div>
+        </div>
+        <div class="advantage-item">
+            <img class="icon" src="img/icon3.png" alt="Лояльные цены">
+            <div class="text-content">
+                <h3>Лояльные цены</h3>
+                <p class="advdesc">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
             </div>
         </div>
     </div>
-    <div class="list">
-        <button class="left">
-        <img class='arroww' src="img/arrow2.png">
-        </button>
-        <h3>1 из 4</h3>
-        <button class="right">
-            <img class="arroww1" src="img/arrow1.png">
-        </button>
-</div>
-<div id="artefacts">
-    <h2 id="arts">Новые артефакты</h2>
-    <div id="artbg">
-        <div id="artinfo">
-            <h3>Kurische Nehrung 24</h3>
-            <p>Вот вам яркий пример современных тенденций - начало повседневной работы по формированию позиции выявляет срочную потребность методов управления процессами. 
-            <br><br>Есть над чем задуматься: представители современных социальных резервов своевременно верифицированы.</p>
-        </div>
+    <div class="price">
+        <button class="priceprograms">Стоимость программ</button>
     </div>
 </div>
-</div>
-
-
-</div>
-
-    
-     
-    </main>
 </body>
 </html>

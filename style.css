@@ -388,26 +388,208 @@ h3{
     margin-right: 200px;
 }
 
-@media (max-width: 1100px) {
-    .header__item-link::before {
-        content: "";
-        position: absolute;
+
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+
+    /* Основные стили */
+    .bg {
+        height: auto; /* Меняем высоту для мобильных устройств */
+        padding: 20px 0;
+    }
+
+    .main {
+        flex-direction: column; /* Сдвигаем элементы в колонку на мобильных устройствах */
+    }
+
+    .header {
+        margin: 0;
+    }
+
+    /* Навигация */
+    ul {
+        margin-left: 0;
+        gap: 20px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .navitem1 {
+        width: 140px; /* Сужаем размер кнопок */
+        height: 40px;
+    }
+
+    .navitem1:hover {
+        background-color: #fff;
+        color: #1a3e3e;
+        transition: 0.5s;
+    }
+
+    .logo {
+        width: 60px; /* Уменьшаем размер логотипа */
+        margin-left: 0;
+    }
+
+    /* Стили заголовков */
+    .titlename h1 {
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 32px; /* Меньший шрифт для мобильных устройств */
+    }
+
+    /* Форма */
+    .form {
+        width: 100%;
+        height: auto; /* Меняем высоту формы для мобильных устройств */
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .form select, .date {
+        width: 100%; /* Растягиваем элементы формы на всю ширину */
+        height: 40px; /* Уменьшаем высоту */
+    }
+
+    /* Программы */
+    .programs {
+        background-color: #f3f5f4;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .programss {
+        margin-left: 0;
+        padding-top: 20px;
+        animation: fadeIn 1.3s forwards;
+    }
+
+    .programpics {
+        display: grid;
+        grid-template-columns: 1fr; /* Один столбец для мобильных устройств */
+        gap: 10px;
+        max-width: 100%;
+        margin: auto;
+        margin-left: 0;
+        position: static;
+    }
+
+    /* Иконки и преимущества */
+    .advantages {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .advantage-item {
+        flex-direction: column; /* Изменяем направление на колонку */
+        padding: 15px;
+    }
+
+    .advdesc {
+        font-size: 12px;
+        text-align: center; /* Центрируем текст */
+    }
+
+    .pic {
+        width: 100%; /* Расширяем картинки до ширины контейнера */
+        height: auto;
+    }
+
+    /* Текст и кнопки */
+    .offertext, .abouttext {
+        font-size: 16px;
+    }
+
+    .offerh, .title1 {
+        font-size: 24px;
+    }
+
+    .tourbtn, .priceprograms {
+        width: 100%;
+        height: 40px; /* Уменьшаем размеры кнопок */
+    }
+
+    /* Прочие стили */
+    .houseimg1 {
+        top: 0;
         left: 0;
-        top: 8px;
-        width: 6px;
-        height: 10px;
-        background-image: url(img/bg.jpeg);
+        height: 250px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* Стили для картинок */
+    .mtnimg1 {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        padding: 0;
+        position: static;
+    }
+
+    /* Анимация для мобильных */
+    .mtnimg, .about {
+        position: static;
+        animation: none; /* Убираем анимацию на мобильных устройствах */
+    }
+
+    /* Программы */
+    .program {
+        width: 100%;
+        height: 45px;
+        padding: 10px;
+    }
+
+    .program:hover {
+        background: #1a3e3e;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+}
+
+/* Для еще меньших экранов, например, для телефонов */
+@media (max-width: 480px) {
+
+    .titlename h1 {
+        font-size: 28px;
+    }
+
+    .form {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form select, .date {
+        width: 90%;
+        height: 35px;
+    }
+
+    .programs {
+        padding: 10px;
+    }
+
+    .programpics {
+        grid-template-columns: 1fr; /* Один столбец */
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .pic {
+        width: 100%;
+        height: auto;
+    }
+
+    .tourbtn, .priceprograms {
+        width: 90%;
+        height: 40px;
+    }
+
+    .houseimg1 {
+        height: 200px;
+        width: 100%;
+        margin-right: 0;
     }
 }
 
-@media (max-width: 576px) {
-    .start__info {
-        padding: 234px 0 50px;
-    }
-}
-
-@media (max-width: 992px) {
-    .start__info {
-        padding: 300px 0 62px;
-    }
-}
